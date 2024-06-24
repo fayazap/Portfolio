@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger from gsap
+import { ScrollTrigger } from "gsap/ScrollTrigger"; 
 import { useGSAP } from "@gsap/react";
 
 const Skills = () => {
@@ -32,7 +32,6 @@ const Skills = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animation for skill items
     skills.forEach((skill, index) => {
       gsap.fromTo(
         `#skill-${index}`,
@@ -43,22 +42,21 @@ const Skills = () => {
           duration: 1,
           scrollTrigger: {
             trigger: `#skill-${index}`,
-            start: "top 80%", // Adjust as needed
-            end: "bottom 60%", // Adjust as needed
+            start: "top 80%",
+            end: "bottom 60%",
             scrub: true,
           },
         }
       );
     });
 
-    // Animation for the image
     gsap.to("#skill-image", {
       opacity: 1,
       y: 0,
       scrollTrigger: {
         trigger: "#skill-image",
-        start: "top 80%", // Adjust as needed
-        end: "bottom 60%", // Adjust as needed
+        start: "top 80%",
+        end: "bottom 60%", 
         scrub: true,
       },
     });
@@ -69,8 +67,20 @@ const Skills = () => {
       <h1 className="text-3xl font-extrabold sm:text-3xl mt-10 text-center underline">
         Skills
       </h1>
-      <div className="flex items-start justify-between mt-8">
-        <div className="w-1/2">
+      <div className="flex flex-col lg:flex-row items-start justify-between mt-8">
+        <div
+          id="skill-image"
+          className="w-full lg:w-1/2 justify-center py-10 lg:py-20 items-center opacity-0 transform translate-y-20"
+        >
+          <p className="text-lg font-semibold max-sm:text-base px-4 lg:px-0">
+            A skilled front-end developer with designing skills in figma and
+            proficient enough in HTML, CSS3, UI/UX, competitive coding as well
+            as JavaScript. Still working on my flaws and making myself better
+            and proficient day by day with an optimistic mind.
+          </p>
+          <img src={skill} alt="Skills" className="max-w-full h-auto mt-10" />
+        </div>
+        <div className="w-full lg:w-1/2 px-4 lg:px-0">
           {skills.map((skill, index) => (
             <div
               key={skill.name}
@@ -93,18 +103,6 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
-        <div
-          id="skill-image"
-          className="w-1/2 justify-center ml-20 py-20 items-center opacity-0 transform translate-y-20"
-        >
-          <p className=" text-lg font-semibold max-sm:text-base">
-            A skilled front-end developer with designing skills in figma and
-            proficient enough in HTML, CSS3, UI/UX, competitive coding as well
-            as JavaScript. Still working on my flaws and making myself better
-            and proficient day by day with an optimistic mind.
-          </p>
-          <img src={skill} alt="Skills" className="max-w-full h-auto mt-10" />
         </div>
       </div>
     </section>
