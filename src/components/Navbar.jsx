@@ -4,7 +4,7 @@ import { navLists } from '../constants';
 
 const Navbar = () => {
   return (
-    <header className='flex w-full items-center justify-between p-5 max-sm:p-3 max-sm:mr-2 sm:px-10'>
+    <header className='flex w-full items-center justify-between p-5 max-sm:p-3 max-sm:mr-4 max-sm:ml-0 sm:px-10'>
       <nav className='screen-max-width flex w-full'>
         <div className='flex flex-1 justify-center'>
           {navLists.map((list, index) => (
