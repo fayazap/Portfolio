@@ -61,14 +61,14 @@ const Headers = () => {
             </a>
           </div>
           <div id="links-to-sites" className="mt-20 ">
-            <a href="https://www.linkedin.com/feed/" className="text-black font-medium mt-4">
+            <a target="_blank" href="https://www.linkedin.com/feed/" className="text-black font-medium mt-4">
               <FontAwesomeIcon icon={faLinkedin} className="h-8" />
             </a>
-            <a href="https://github.com/fayazap" className="text-black font-medium ml-10">
+            <a target="_blank" href="https://github.com/fayazap" className="text-black font-medium ml-10">
               <FontAwesomeIcon icon={faGithub} className="h-8" />
             </a>
 
-            <a href="https://x.com/fayaz_a_p?t=Dp2kFSrwhuKD4Mn6zsmmMA&s=08" className="text-black font-medium ml-10">
+            <a target="_blank" href="https://x.com/fayaz_a_p?t=Dp2kFSrwhuKD4Mn6zsmmMA&s=08" className="text-black font-medium ml-10">
               <FontAwesomeIcon icon={faXTwitter} className="h-8" />
             </a>
           </div>

@@ -80,7 +80,7 @@ const Skills = () => {
           </p>
           <img src={skill} alt="Skills" className="max-w-full h-auto mt-10" />
         </div>
-        <div className="w-full lg:w-1/2 px-4 lg:px-0">
+        <div className="w-full lg:w-1/2 px-4 lg:px-0 max-sm:w-4/5 sm:ml-2 sm:mr-3 max-sm:ml-10">
           {skills.map((skill, index) => (
             <div
               key={skill.name}
