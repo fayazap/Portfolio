@@ -43,7 +43,7 @@ const About = () => {
   }, []); 
 
   return (
-    <section className="screen-max-width mt-10  mb-20">
+    <section className="screen-max-width mt-10  mb-10">
       <div className="screen-max-width ">
         <div className="underline text-3xl font-extrabold flex flex-col items-center">
           <h1>About</h1>

@@ -64,13 +64,13 @@ const Skills = () => {
 
   return (
     <section className="screen-max-width">
-      <h1 className="text-3xl font-extrabold sm:text-3xl mt-10 text-center underline">
+      <h1 className="text-3xl font-extrabold sm:text-3xl mt-20 max-sm:mt-10 mb-20 max-sm:mb-10 max-sm:mt-3 text-center underline">
         Skills
       </h1>
-      <div className="flex flex-col lg:flex-row items-start justify-between mt-8 max-sm:mt-1">
+      <div className="flex flex-col lg:flex-row items-start justify-between max-sm:mt-1">
         <div
           id="skill-image"
-          className="w-full lg:w-1/2 justify-center py-10 lg:py-20 items-center opacity-0 transform translate-y-20"
+          className="w-full lg:w-1/2 justify-center lg:py-20 items-center opacity-0 transform translate-y-20"
         >
           <p className="text-lg font-semibold max-sm:text-base px-4 lg:px-0">
             A skilled front-end developer with designing skills in figma and

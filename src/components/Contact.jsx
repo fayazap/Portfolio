@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <section className="screen-max-width">
       <div className="screen-max-width">
-        <h1 className="text-3xl font-extrabold sm:text-3xl mt-10 text-center underline">
+        <h1 className="text-3xl font-extrabold sm:text-3xl mt-20 max-sm:mt-10 mb-20 max-sm:mb-10 text-center underline">
           Contact
         </h1>
         <form onSubmit={handleSubmit} className="mt-8 max-sm:m-8 max-w-lg mx-auto">

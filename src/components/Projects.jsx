@@ -74,7 +74,7 @@ const Projects = () => {
   return (
     <section className="screen-max-width" ref={projectsRef}>
       <div className="screen-max-width">
-        <h1 className="text-3xl font-extrabold sm:text-3xl mt-10 text-center underline">Projects</h1>
+        <h1 className="text-3xl font-extrabold sm:text-3xl mt-20 max-sm:mt-10 mb-20 max-sm:mb-10 text-center underline">Projects</h1>
       </div>
       <div className="flex flex-wrap justify-around mt-8">
         {projects.map((project, index) => (

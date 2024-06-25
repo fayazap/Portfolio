@@ -4,7 +4,7 @@ const Resume = () => {
   return (
     <section className='screen-max-width'>
         <div className='screen-max-width'>
-        <h1 className="text-3xl font-extrabold sm:text-3xl mt-10 text-center underline">Resume</h1>
+        <h1 className="text-3xl font-extrabold sm:text-3xl mt-20 max-sm:mt-10 mb-20 max-sm:mb-10 text-center underline">Resume</h1>
         </div>
         <div id="contact" className="mt-16 text-center mb-16">
             <a target="_blank"
