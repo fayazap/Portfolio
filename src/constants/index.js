@@ -1,13 +1,13 @@
 import { self } from "../utils";
 
 export const navLists = [
-  "Home",
-  "About",
-  "Skills",
-  "Projects",
-  "Resume",
-  "Contact",
-];
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Skills", id: "skills" },
+    { name: "Projects", id: "projects" },
+    { name: "Resume", id: "resume" },
+    { name: "Contact", id: "contact" },
+  ];
 export const roles = ["web developer", "designer", "coder", "photographer"];
 
 // each project have a title, image and a link to the project
