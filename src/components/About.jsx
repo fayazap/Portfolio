@@ -43,12 +43,12 @@ const About = () => {
   }, []); 
 
   return (
-    <section className="screen-max-width mt-10 mb-20">
-      <div className="screen-max-width">
+    <section className="screen-max-width mt-10  mb-20">
+      <div className="screen-max-width ">
         <div className="underline text-3xl font-extrabold flex flex-col items-center">
           <h1>About</h1>
         </div>
-        <div className="mt-20">
+        <div className="mt-20 max-sm:mt-10">
           <div className="flex items-start justify-between">
             <div className="mx-auto bg-white overflow-hidden md:max-w-2xl">
               <div className="md:flex">

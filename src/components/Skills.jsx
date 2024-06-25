@@ -67,7 +67,7 @@ const Skills = () => {
       <h1 className="text-3xl font-extrabold sm:text-3xl mt-10 text-center underline">
         Skills
       </h1>
-      <div className="flex flex-col lg:flex-row items-start justify-between mt-8">
+      <div className="flex flex-col lg:flex-row items-start justify-between mt-8 max-sm:mt-1">
         <div
           id="skill-image"
           className="w-full lg:w-1/2 justify-center py-10 lg:py-20 items-center opacity-0 transform translate-y-20"
