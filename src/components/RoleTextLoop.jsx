@@ -7,6 +7,7 @@ const TextLoop = styled.div`
   font-weight: 600;
   font-size: 32px;
   display: flex;
+  flex-direction: row;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
@@ -17,6 +18,8 @@ const TextLoop = styled.div`
     font-size: 22px;
     line-height: 48px;
     margin-bottom: 16px;
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center; /* Center-align the text */
   }
 `;
 
@@ -33,7 +36,7 @@ const Bio = {
 const RoleTextLoop = () => {
   return (
     <TextLoop>
-      I am a
+      <span>I am a</span>
       <Span className='text-yellow-400'>
         <Typewriter
           options={{
