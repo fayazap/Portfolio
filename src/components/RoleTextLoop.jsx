@@ -1,43 +1,15 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import styled from 'styled-components';
 
-// Styled components
-const TextLoop = styled.div`
-  font-weight: 600;
-  font-size: 32px;
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
-  @media (max-width: 960px) {
-    text-align: center;
-  }
-  @media (max-width: 640px) {
-    font-size: 22px;
-    line-height: 48px;
-    margin-bottom: 16px;
-    flex-direction: column; /* Stack vertically on small screens */
-    align-items: center; /* Center-align the text */
-  }
-`;
-
-const Span = styled.span`
-  color: ${({ theme }) => theme.primary};
-  cursor: pointer;
-`;
-
-// Main component
 const Bio = {
   roles: ['Web Developer', 'Designer', 'Coder', 'Photographer'],
 };
 
 const RoleTextLoop = () => {
   return (
-    <TextLoop>
+    <div className="font-semibold text-2xl max-sm:text-lg md:text-2xl flex md:flex-row flex-col md:gap-3 gap-1 text-primary leading-none md:leading-[68px] md:text-left mb-4 md:mb-0">
       <span>I am a</span>
-      <Span className='text-yellow-400'>
+      <span className="text-yellow-400 cursor-pointer">
         <Typewriter
           options={{
             strings: Bio.roles,
@@ -45,8 +17,8 @@ const RoleTextLoop = () => {
             loop: true,
           }}
         />
-      </Span>
-    </TextLoop>
+      </span>
+    </div>
   );
 };
 
