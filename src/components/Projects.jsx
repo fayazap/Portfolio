@@ -78,13 +78,18 @@ const Projects = () => {
       </div>
       <div className="flex flex-wrap justify-around mt-8">
         {projects.map((project, index) => (
-          <div key={project.title} className="flex justify-center m-4 lg:w-1/4 md:w-1/3 sm:w-1/2 project-container opacity-0 transform translate-y-20">
-            <a href={project.link} target="_blank" rel="noreferrer">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="h-30  object-cover rounded-lg shadow-lg "
-              />
+          <div key={project.title} className="relative flex justify-center m-4 lg:w-1/4 md:w-1/3 sm:w-1/2 project-container opacity-0 transform translate-y-20">
+            <a href={project.link} target="_blank" rel="noreferrer" className="group">
+              <div className="relative rounded-lg overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-30 object-cover rounded-lg shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-yellow-400 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-black text-xl font-semibold">{project.title}</span>
+                </div>
+              </div>
             </a>
           </div>
         ))}

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import RoleTextLoop from "./RoleTextLoop";
 
 const Headers = () => {
   const roles = ["Web developer", "Designer", "Coder", "Photographer"];
@@ -45,12 +46,7 @@ const Headers = () => {
             I'm <span className="text-yellow-400">Fayaz</span>
           </h1>
           <h3 className="mt-4">
-            <span
-              ref={roleRef}
-              className="text-black text-lg font-medium opacity-0"
-            >
-              {roles[currentRole]}
-            </span>
+            <RoleTextLoop />
           </h3>
           <div id="contact-link" className="mt-12">
             <a
