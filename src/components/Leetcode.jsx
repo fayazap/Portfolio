@@ -15,7 +15,7 @@ const Leetcode = () => {
         <img
           src="https://leetcard.jacoblin.cool/FayazAP?theme=unicorn"
           alt="LeetCode Stats"
-          className="max-w-full max-sm:w-4/5 max-sm:ml-12 h-auto"
+          className="max-w-full max-sm:w-4/5 max-sm:ml-10 h-auto"
         />
       </a>
     </div>
