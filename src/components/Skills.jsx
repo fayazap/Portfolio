@@ -14,6 +14,7 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; 
 import { useGSAP } from "@gsap/react";
+import Leetcode from "./Leetcode";
 
 const Skills = () => {
   const skills = [
@@ -104,6 +105,9 @@ const Skills = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+      <Leetcode/>
       </div>
     </section>
   );
