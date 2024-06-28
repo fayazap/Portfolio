@@ -3,8 +3,8 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    from_email: "",
     message: "",
   });
 
@@ -22,7 +22,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_7o626rf",
-        "template_459x5gj",
+        "template_2zfdljg",
         e.target,
         "FQW6Jwd-02fG61NuE"
       )
@@ -38,8 +38,8 @@ const Contact = () => {
       );
 
     setFormData({
-      name: "",
-      email: "",
+      from_name: "",
+      from_email: "",
       message: "",
     });
   };
@@ -57,8 +57,8 @@ const Contact = () => {
             </label>
             <input
               type="text"
-              name="name"
-              value={formData.name}
+              name="from_name"
+              value={formData.from_name}
               onChange={handleChange}
               required
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -70,8 +70,8 @@ const Contact = () => {
             </label>
             <input
               type="email"
-              name="email"
-              value={formData.email}
+              name="from_email"
+              value={formData.from_email}
               onChange={handleChange}
               required
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
