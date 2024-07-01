@@ -76,7 +76,7 @@ const Skills = () => {
           <p className="text-lg font-semibold max-sm:text-base px-4 lg:px-0">
             A skilled front-end developer with designing skills in figma and
             proficient enough in HTML, CSS3, UI/UX, competitive coding as well
-            as JavaScript. Still working on my flaws and making myself better
+            as C/C++. Still working on my flaws and making myself better
             and proficient day by day with an optimistic mind.
           </p>
           <img src={skill} alt="Skills" className="max-w-full h-auto mt-10" />
