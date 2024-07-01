@@ -23,7 +23,7 @@ const Resume = () => {
         </div>
         <div id="contact" className="mt-16 text-center mb-16 opacity-0 transform translate-y-20">
             <a target="_blank"
-              href="https://drive.google.com/file/d/1ovaVhmjfOOFz-Evz2W1LTVfRlEMtVZ-q/view?usp=sharing"
+              href="https://drive.google.com/file/d/1aFwQ_UEgKNwgx5TzztYjyCN3U9mqpq-N/view?usp=drive_link"
               className="bg-yellow-400 text-xl text-black px-12 py-3 rounded-lg font-medium mt-4 mb-8 hover:bg-yellow-500 transition-all"
             >
               Download Resume
